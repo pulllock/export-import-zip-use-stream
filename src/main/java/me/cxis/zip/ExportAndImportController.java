@@ -119,6 +119,8 @@ public class ExportAndImportController {
                 String name = zipEntry.getName();
                 long size = zipEntry.getSize();
                 // unknown size
+                // ZipEntry的size可能为-1，表示未知
+                // 通过上面的几种方式下载，就会产生这种情况
                 if (size == -1) {
                     ByteArrayOutputStream baos = new ByteArrayOutputStream();
                     while (true) {
@@ -128,7 +130,7 @@ public class ExportAndImportController {
                     }
                     baos.close();
                     System.out.println(String.format("Name:%s,Content:%s",name,new String(baos.toByteArray())));
-                } else {
+                } else { // ZipEntry的size正常
                     byte[] bytes = new byte[(int) zipEntry.getSize()];
                     zipInputStream.read(bytes, 0, (int) zipEntry.getSize());
                     System.out.println(String.format("Name:%s,Content:%s",name,new String(bytes)));
