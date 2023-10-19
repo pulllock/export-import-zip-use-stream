@@ -1,4 +1,4 @@
-package me.cxis.zip;
+package fun.pullock.zip;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

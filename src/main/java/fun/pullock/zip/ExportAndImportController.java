@@ -1,4 +1,4 @@
-package me.cxis.zip;
+package fun.pullock.zip;
 
 import org.springframework.core.io.ByteArrayResource;
 import org.springframework.core.io.InputStreamResource;

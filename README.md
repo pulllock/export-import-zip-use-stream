@@ -8,7 +8,7 @@
 下面说明怎样运行此项目并看到效果。首先克隆此项目：
 
 ```
-git clone https://github.com/dachengxi/export-import-zip-use-stream.git
+git clone https://github.com/pulllock/export-import-zip-use-stream.git
 ```
 
 ### 运行
@@ -29,7 +29,7 @@ git clone https://github.com/dachengxi/export-import-zip-use-stream.git
 
 ## 作者
 
-* **ChengXi** - ** - [dachengxi](https://github.com/dachengxi)
+* **Pullock** - ** - [Pullock](https://github.com/pulllock)
 
 ## License
 
